@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<malloc.h>
 #include<bits/stdc++.h>
-//#include<windows.h>
+#include<windows.h>
 int f2;
 int scount = 0;
 int dcount = 0;
@@ -531,7 +531,7 @@ void time()
 	}
 	if(( c1.month-p->d.month ) >= 2 )
 	{
-		thour = thour + ( c1.month - p->d.day - 1 )*30*24;
+		thour = thour + ( c1.month - p->d.month - 1 )*30*24;
 		c1.month = p->d.month + 1;
 	}
 	if( ( c1.month - p->d.month ) == 1 )
